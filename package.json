@@ -1,0 +1,20 @@
+{
+  "name": "nodejswarsawvii",
+  "version": "1.0.0",
+  "description": "Examples for the Node.js Warsaw meetup VII talk, \"Making your Node.js apps fast\"",
+  "main": "ex1_cache_vs_ram.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahan/NodejsWarsawVII.git"
+  },
+  "author": "hz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mahan/NodejsWarsawVII/issues"
+  },
+  "homepage": "https://github.com/mahan/NodejsWarsawVII#readme"
+}
