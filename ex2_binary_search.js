@@ -9,7 +9,7 @@ let binary_search = function (arr, x) {
     // Iterate while start not meets end
     while (start<=end){
 
-        // Find the mid index
+        // Find the middle index
         let mid=Math.floor((start + end)/2);
 
         // If element is present at mid, return True
@@ -52,10 +52,11 @@ arr.sort()
 
 let now = performance.now()
 console.log('looking up random value 10 thousand times using array.indexOf:')
-let i = 0, r = false;
+let i, r = false, search_value = -1;
 let hits = 0;
 for(i = 0; i < 10000; i++) {
-    r = arr.indexOf(Math.floor(Math.random() * 1000000) + 1) !== -1;
+    search_value = Math.floor(Math.random() * 1000000) + 1;
+    r = arr.indexOf(search_value) !== -1;
     if (r) {hits++}
 }
 console.log(`done in : ${performance.now() - now} found ${hits} hits`);
@@ -72,7 +73,8 @@ console.log('looking up random value 10 thousand times using binary_search:')
 now = performance.now()
 hits = 0;
 for(i = 0; i < 10000; i++) {
-    r = binary_search(arr, Math.floor(Math.random() * 1000000) + 1) !== -1;
+    search_value = Math.floor(Math.random() * 1000000) + 1;
+    r = binary_search(arr, search_value) !== -1;
     if (r) {hits++}
 }
 console.log(`done in : ${performance.now() - now} found ${hits} hits`);
