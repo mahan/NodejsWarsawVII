@@ -21,20 +21,20 @@ function mix_up_array(arr, no_of_ops) {
 
 
 let now = performance.now()
-mix_up_array(new BigInt64Array(_32MB), 100000000)
+mix_up_array(new BigInt64Array(_32MB), 10000000)
 console.log(`Mix up 32MB took: ${performance.now() - now}`);
 
 now = performance.now()
-mix_up_array(new BigInt64Array(_4MB), 100000000)
+mix_up_array(new BigInt64Array(_4MB), 10000000)
 console.log(`Mix up 4MB took: ${performance.now() - now}`);
 
 
 now = performance.now()
-mix_up_array(new BigInt64Array(_1MB), 100000000)
+mix_up_array(new BigInt64Array(_1MB), 10000000)
 console.log(`Mix up 1MB took: ${performance.now() - now}`);
 
 now = performance.now()
-mix_up_array(new BigInt64Array(_8kb), 100000000)
+mix_up_array(new BigInt64Array(_8kb), 10000000)
 console.log(`Mix up 8kb took: ${performance.now() - now}`);
 
 

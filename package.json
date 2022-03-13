@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/mahan/NodejsWarsawVII/issues"
   },
-  "homepage": "https://github.com/mahan/NodejsWarsawVII#readme"
+  "homepage": "https://github.com/mahan/NodejsWarsawVII#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
 }
